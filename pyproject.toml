@@ -1,0 +1,26 @@
+[project]
+name = "scrutiny"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Olivier Steck",email = "osteck@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pytest-asyncio (>=1.1.0,<2.0.0)",
+    "pytest-cov (>=6.2.1,<7.0.0)",
+    "pytest (>=8.4.1,<9.0.0)"
+]
+classifiers=["Framework :: Pytest"]
+
+[tool.poetry]
+packages = [{include = "scrutiny", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.entry-points.pytest11]
+scrutiny = "scrutiny.plugin"

@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "juiced-project",
+			"path": "../../../.."
+		},
+		{
+			"name": "sandbox",
+			"path": "../../../../sandbox"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"terminal.integrated.shellIntegration.environmentReporting": false,
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "bash",
+				"icon": "terminal-bash"
+			}
+		}
+	}
+}
